@@ -41,7 +41,6 @@ const checkImage = () => {
       console.log("QRcodeが見つかりました", code);
       drawRect(code.location);
       document.getElementById('qr-msg').textContent = `QRコード：${code.data}`;
-      document.getElementById("outputMessage").innerText = code.data;
    } else {
       console.log("QRcodeが見つかりません…", code);
       rectCtx.clearRect(0, 0, contentWidth, contentHeight);
